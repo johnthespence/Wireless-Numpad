@@ -8,11 +8,21 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp A &kp B &kp C &kp D
-                &kp E &kp F &kp G &kp H
-                &kp I &kp J &kp K
-                &kp L &kp M &kp N &kp O
-                &kp P &kp Q
+&mo 1         &kp SLASH     &kp ASTERISK  &kp MINUS
+&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&kp NUMBER_4  &kp N5        &kp NUMBER_6
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+&kp NUMBER_0                &kp DOT
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans            &kp EQUAL  &kp DOLLAR   &kp DELETE
+&kp K_CALCULATOR  &trans     &trans       &trans
+&trans            &trans     &trans
+&trans            &trans     &sys_reset   &trans
+&trans                       &bootloader
             >;
         };
     };
